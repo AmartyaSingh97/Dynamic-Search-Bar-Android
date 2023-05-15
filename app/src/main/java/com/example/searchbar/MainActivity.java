@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
         animator.addUpdateListener(animation -> {
             float progress = (float) animation.getAnimatedValue();
-            int scrollX = (int) (search.getHeight() * progress);
+            int scrollX = (int) (search.getWidth() * progress);
             search.setPadding(0, 0, 0, 0);
         });
 
